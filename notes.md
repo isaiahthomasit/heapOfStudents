@@ -22,16 +22,16 @@ delete[] heapArray; // use this for deleting or freeing an array
 
 # critterHeap.cpp
 
-~Critter(); // ~ = tilda, tilda is a descontruster, you should write this right away, cleap up your play things
+~Critter(); // ~ = tilda, tilda is a destructor, you should write this right away, clean up your play things
 *Critter::name = name; // value at name gets name
 
 //delete class
-Critter::~Critter // deconstructer is called when the class is deleted
+Critter::~Critter //destructor is called when the class is deleted
 
 // c is a pointer so you use the arrow 
 c->setName("George")
 
-// delete heap data that c points to, pointer will be destoryed automatically
+// delete heap data that c points to, pointer will be destroyed automatically
 delete(c);
 
 Critter* cA = new Critter[3];
