@@ -6,8 +6,8 @@ ___________
 
 Examples Used:
   cpp_adv_oop:
-    basicHeap
-    critterHeap
+    basicHeap.cpp
+    critterHeap.cpp
 __________
 
 basicHeap
@@ -98,6 +98,18 @@ ___________
 ```
 ___________
 
+Examples Used:
+  cpp_adv_oop:
+    shallowCopy.cpp
+    shallowHeap.cpp
+    deepCopy.cpp
+
+___________
+
+
+//When copying in the heap, it doesn't work the same as copying in the stack.
+//To copy in the heap, you'll need to create a deepCopy
+//copying classes
 
 
 
