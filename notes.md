@@ -1,43 +1,108 @@
+# Day 1
+
 ```text
+
+___________
 
 Examples Used:
   cpp_adv_oop:
     basicHeap
     critterHeap
+__________
 
-# basicHeap
+basicHeap
 int stackInt = 0; //
 
-15 int* heapInt = new int; // "new" creates 2 things: a pointer to the data on the heap cloud 
-*heapInt = 5; // pointer to an int
+15 int* heapInt = new int;
+  //"new" creates 2 things: a pointer to the data on the heap cloud
 
-18 std::string* heapString = new std::string("I'm on the heap"); // pointer on heapString, data lives on the heap
+*heapInt = 5;
+  //pointer to an int
 
-21 int* heapArray = new int[5] // you can change the array size later, can't do that on stack
+18 std::string* heapString = new std::string("I'm on the heap");
+  //pointer on heapString; data lives on the heap
 
-28 delete heapInt; // "delete" = free up memory, deletes what the pointer was pointing to, why? if not, causes memory leak 
+21 int* heapArray = new int[5]
+  //you can change the array size later; can't do that on the stack
+
+28 delete heapInt;
+  //"delete" = free up memory; deletes what the pointer was pointing to, why? If not, it causes a memory leak 
 29 delete heapString;
 
-delete[] heapArray; // use this for deleting or freeing an array
+delete[] heapArray;
+  //use this for deleting or freeing an array
 
-# critterHeap.cpp
+___________
 
-~Critter(); // ~ = tilda, tilda is a destructor, you should write this right away, clean up your play things
-*Critter::name = name; // value at name gets name
+critterHeap.cpp
+~Critter();
+  //~ = tilde; tilde is a destructor; you should write this right away, clean up your play things
 
-//delete class
-Critter::~Critter //destructor is called when the class is deleted
+*Critter::name = name;
+  //value at name gets name
 
-// c is a pointer so you use the arrow 
+Critter::~Critter
+  //delete class
+  //destructor is called when the class is deleted
+
 c->setName("George")
+  //c is a pointer, so you use the arrow 
 
-// delete heap data that c points to, pointer will be destroyed automatically
 delete(c);
+  //delete heap data that c points to; the pointer will be destroyed automatically
 
 Critter* cA = new Critter[3];
-
-// when writing a new pointer, you should immediately write the delete 
+ 
 delete[] cA;
+  //when writing a new pointer, you should immediately write the delete
+
+___________
+
+
+```
+
+# Day 2
+
+```
+
+___________
+
+Review:
+Access to 2 different types of memory. We've been using the stack
+The new memory we are learning is heap memory / shared memory
+You can easily destroy/create it and move it around
+Stack space = local
+Heap space = shared
+
+"new" means it's on the heap in C code
+
+___________
+
+
+critterHeap
+valgrind ./a.out
+  //valgrind keeps track of every time memory is allocated and deallocated
+  //Tells you when there is a memory leak
+
+valgrind --leak-check=full ./a.out
+  //tells you exactly WHERE a memory leak was found.
+  //EX: critterleak.cpp:44 -> line 44
+  //EX: HEAP SUMMARY: 8 allocs, 8 frees -> good message, no leaks
+
+___________
+
+```
+
+# Project Info
+
+```
+___________
+
+
+
+
+  
+
 
 
 ```
