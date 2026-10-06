@@ -105,19 +105,36 @@ Examples Used:
     deepCopy.cpp
     friend.cpp
     complex.cpp
+    staticBus.cpp
 
 ___________
 
+I've blanked out here; these are just keywords to take note of:
 
-//When copying in the heap, it doesn't work the same as copying in the stack.
-//To copy in the heap, you'll need to create a deepCopy
-//copying classes
+  //copying classes
+  //When copying in the heap, it doesn't work the same as copying on the stack.
+  //To copy in the heap, you'll need to create a deepCopy
+
 
 friend
 friend void changeName();
   //"friend" is an identifier
   //friend function (in C++) can access private instance variables
-  //
+
+staticbus
+  //the word "static" doesn't belong to an instance
+  //the "board" method is attached to an instance
+  //you can have static methods and static data, belongs to the class, not the instances
+
+static void printTotal();
+  //static belongs to the class
+  //the ordinary methods belong to everybody
+  //static method you can only manipulate static data
+
+
+
+
+
 
   
 
