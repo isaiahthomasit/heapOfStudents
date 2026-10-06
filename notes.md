@@ -103,6 +103,8 @@ Examples Used:
     shallowCopy.cpp
     shallowHeap.cpp
     deepCopy.cpp
+    friend.cpp
+    complex.cpp
 
 ___________
 
@@ -111,7 +113,11 @@ ___________
 //To copy in the heap, you'll need to create a deepCopy
 //copying classes
 
-
+friend
+friend void changeName();
+  //"friend" is an identifier
+  //friend function (in C++) can access private instance variables
+  //
 
   
 
