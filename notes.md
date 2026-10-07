@@ -91,13 +91,6 @@ valgrind --leak-check=full ./a.out
 
 ___________
 
-```
-
-# Project Info
-
-```
-___________
-
 Examples Used:
   cpp_adv_oop:
     shallowCopy.cpp
@@ -131,13 +124,41 @@ static void printTotal();
   //the ordinary methods belong to everybody
   //static method you can only manipulate static data
 
+___________
+
+```
+
+# Project Info
 
 
+```
+___________
 
+Starting output:
+  #1 Make a menu
 
+EX:
+0) quit
+1) print all student names
+2) print all student data
+3) find a student
+  // last name "M"
+4) sort students
+  //first name
+  //last name
+  //credit hours
 
-  
+Please choose 0-4:
+  //code keeps going until quit
 
+___________
+
+Normalization:
+Student owns name, address, and credit hours
+
+Student class
+Date class
+Address class
 
 
 ```
