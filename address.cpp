@@ -11,10 +11,11 @@ void Address::init(std::string street, std::string city, std::string state, std:
   this->city = city;
   this->state = state;
   this->zip = zip;
+  // assigns parameter 'name' to Address class 'name'
 
 }  
 
 void Address::printAddress(){
-  std::cout << street << '\n' << city << " " << state << ", " << zip;
+  std::cout << street << '\n' << city << " " << state << ", " << zip << std::endl;
 
 }
