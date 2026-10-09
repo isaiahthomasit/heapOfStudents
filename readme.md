@@ -11,7 +11,7 @@ class Student{
   # Address* Address
   # int creditHours
   + Student()
-  + ~Studen()
+  + ~Student()
   + void init(studentString)
   + void printStudent() 
 }
