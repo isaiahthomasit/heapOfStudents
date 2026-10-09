@@ -2,7 +2,10 @@
 #include <iostream>
 
 Address::Address(){
-
+  this->street = "";
+  this->city = "";
+  this->state = "";
+  this->zip = "";
 }
 
 void Address::init(std::string street, std::string city, std::string state, std::string zip){
